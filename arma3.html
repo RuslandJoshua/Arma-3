@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ARMA 3</title>
+    <link rel="shortcut icon" href="Images/arma_3_icon.png">
+    <link rel="stylesheet" href="stilus.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="https://arma3.com/"><img src="Images//arma-3.png" height="90px"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="https://store.steampowered.com/app/107410/Arma_3/">Steam</a></li>
+                    <li><a href="https://gepigeny.hu/jatek/arma-3">Specifikációk</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <br>
+        <br>
+        <br>
+
+        <hr>
+        <!-- just to make scrolling effect possible -->
+        <h2 class="myH2">Mi is az ARMA 3?</h2>
+        <p class="myP"></p>
+        <p class="myP"></a></p>
+
+        <b>
+            <p class="myP">Arma 3:</p>
+        </b>
+        <p class="myP">
+
+            Az ARMA 3 egy nyílt világú, realizmuson alapuló, katonai taktikai lövöldözős videojáték, amelyet a Bohemia
+            Interactive fejlesztett ki és tett közzé kizárólag a Steam terjesztési platformon keresztül. 2013 szeptemberében jelent meg a Microsoft Windows számára, később pedig 2015 augusztusában jelentették be a macOS és a Linux platformra.<br>
+            <br>
+            Videó:<br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YSuOzp9dh8g?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
+        <p class="myP">Arma 3 oldala: <a href="https://arma3.com/">https://arma3.com/</a></p>
+    </div>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+
+</html>
